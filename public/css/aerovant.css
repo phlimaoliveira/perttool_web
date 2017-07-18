@@ -1,0 +1,312 @@
+body {
+	background-color:white;
+}
+
+.phantom_slider {
+	margin-top:100px;	
+}
+
+.conteudo_slider_box {
+	margin-top:150px;
+}
+
+#color_icons {
+	color:#026b2c;
+}
+
+.produto_descricao {
+	color:#757575;
+	font-size:8pt;
+	text-align:justify;
+}
+
+.btn-mais-produtos {
+	margin-bottom:30px;
+}
+
+.img-blog-main {
+  	text-align: center;
+  	padding: 0px 0;
+  	background-color: #f8f8f9;
+  	color: #bebec3;
+}
+
+.img-blog-main img {
+	width:340px;
+	height:230px;
+}
+
+.landing-page .green-section {
+  background: #00706c;  
+  padding-bottom:10px;
+}
+
+.contato-labels {
+	color: #e0e0e0;
+}
+
+.box-contato {
+	margin-top:35px;
+}
+
+.copyright-rodape {
+	font-size:8pt;
+	margin-top:10px;
+	text-align: center;
+	color:white;	
+}
+
+#btn-contato {
+	background-color:#1ab394;
+}
+
+#btn-contato:hover {
+	background:#179d82;	
+}
+
+.row-white {
+	background-color:white;
+}
+
+.youtube-iframe {
+	/* key stuff */
+    width: 550px; /* you have to have a size or this method doesn't work */
+    height: 300px; /* think about making these max-width instead - might give you some more responsiveness */
+    
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+    background-color:black;
+}
+
+.youtube-iframe iframe {	
+	width:550px;
+	height:300px;
+}
+
+@media (max-width: 1200px) {
+	.youtube-iframe {
+		width:480px;
+		height:280px;
+
+		top: 0; right: 0; /* confuse it i guess */
+	    bottom: 0; left: 0;
+	    margin: auto; /* make em equal */
+	}
+
+	.youtube-iframe iframe {
+		width:480px;
+		height:280px;
+	}
+
+	.img-blog-main img {
+		width:280px;
+		height:200px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.row-without-padding {
+		margin-top:-50px;
+	}
+}
+
+@media (max-width: 575px) {
+	.youtube-iframe {
+		width:290px;
+		height:160px;
+
+		top: 0; right: 0; /* confuse it i guess */
+	    bottom: 0; left: 0;
+	    margin: auto; /* make em equal */
+	}
+
+	.youtube-iframe iframe {
+		width:290px;
+		height:160px;
+	}
+}
+
+@media (max-width: 767px) {
+	.row-without-padding {
+		margin-top:-50px;
+	}
+}
+
+@media (max-width: 330px) {
+	.img-blog-main img {
+		width:250px;
+		height:160px;
+	}
+
+}
+
+.detalhes_produto {	
+	margin-top:75px;
+}
+
+.title-produto-detail h2 {
+	font-weight: bold;
+}
+
+.formas-pagamento {		
+	float:right;
+	width:100%;
+	height: auto;
+	display:block;	
+}
+
+.img-detalhes-anuncio {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 990px) {
+	.img-detalhes-anuncio {
+		width:300px;
+		height:180px;
+	}
+
+}
+
+.ibox-content p {
+	text-align:justify;
+}
+
+.primeiro-paragrafo {
+	margin-top:-60px;
+	text-align:justify;
+}
+
+.img-begin-post img{
+	margin-top:70px;
+	width:auto;
+	max-width:100%;
+	height:auto;
+}
+
+#login-aerovant {
+	width:400px;
+	height:auto;
+
+	top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+
+    margin-top:15%;
+}
+
+.bg-login {
+	  /*background:url("../img/landing/landing_aerovant_02.png"); */
+	  position: fixed; 
+	  top: 0; 
+	  left: 0; 
+
+	  /* Preserve aspet ratio */
+	  min-width: 100%;
+	  min-height: 100%;
+	  background-color:#1B5E20;
+}
+
+@media (max-width: 430px) {
+	#login-aerovant {
+		width:300px;
+		height:auto;
+
+		top: 0; right: 0; /* confuse it i guess */
+	    bottom: 0; left: 0;
+	    margin: auto; /* make em equal */	   
+
+	    margin-top:180px;
+	}
+
+}
+
+@media (max-width: 470px) {	
+
+	.padding-mobile-post {
+		margin: 0px -35px -35px -35px;			
+	}
+
+	.padding-sidebar-mobile-post {
+		margin: 0px 0px 0px 0px;		
+		margin-left:-20px;			
+	}
+}
+
+.sidebar {
+	margin-top:50px;	
+	width:100%;
+	height:auto;
+}
+
+.sidebar .title {
+	color: black;
+	font-size:16pt;
+	padding:15px;
+}
+
+.sidebar .col-lg-12 .col-lg-8 p {
+	font-size:9pt;
+	text-align: justify;
+}
+
+.sidebar .col-lg-12 {	
+	padding:0px;
+	padding-top:20px;
+	padding-bottom:20px;
+	
+}
+
+.categorias_post li {	
+	padding-top:10px;	
+	padding-bottom:10px;
+	font-size:11pt;
+	list-style-type: none;
+	color:black;
+	font-weight: bold;
+}
+
+#last_item_li {
+	border-bottom:0px solid white;
+}
+
+.categorias_post {
+	margin-left:-20px;	
+}
+
+.title_product_detail {
+	font-size:16pt;
+	color:green;
+	font-weight: bold;
+	padding-bottom:10px;
+	border-bottom: 1px #e0e0e0 solid;
+}
+
+.product_info_detail {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.value_product {
+	font-size:14pt;
+	font-weight: bold;
+	color:green;
+}
+
+.value_before_product {
+	color:gray;
+	text-decoration: line-through;
+	font-size:8pt;
+}
+.sidebar_dashboard {
+	border-left: 4px solid #19aa8d;
+	background: #293846;
+}
+
+.aerovant_sidebar_item {
+  color: #212121;
+  font-weight: 600;
+}
