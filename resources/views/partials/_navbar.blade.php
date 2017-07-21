@@ -14,10 +14,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="#inicio">Home</a></li>
-                        <li><a class="page-scroll" href="#sobre">Sobre a ferramenta</a></li>
-                        <li><a class="page-scroll" href="#documentacao">Documentação</a></li>
-                        <li><a class="page-scroll" href="#download">Download</a></li>
+                        <li><a class="page-scroll" href="/#inicio">Home</a></li>
+                        <li><a class="page-scroll" href="/#sobre">Sobre a ferramenta</a></li>
+                        <li><a class="page-scroll" href="/#documentacao">Documentação</a></li>
+                        <li><a class="page-scroll" href="/#download">Download</a></li>
                         <li><a class="page-scroll" href="login">Repositório</a></li>
                     </ul>
                 </div>

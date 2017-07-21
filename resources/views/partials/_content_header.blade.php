@@ -10,7 +10,7 @@
             <div>
                 <i class="fa fa-code features-icon"></i>
                 <h2><b>Open-source</b></h2>
-                <p style="color:#424242">Obtenha nosso código fonte para fazer parte de nosso time de desenvolvedores</p>
+                <p style="color:#424242">Ferramenta desenvolvida na linguagem mais popular do universo: Java! Baixe agora o código e faça as melhorias que você desejar</p>
             </div>
             <div class="m-t-lg">
                 <i class="fa fa-group features-icon"></i>

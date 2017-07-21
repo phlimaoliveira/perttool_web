@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>PERTTOOL - Repositório de Redes PERT/CPM</title>
+        <title>PERTTOOL - Cadastro de usuários</title>
 
         <!-- Parsley -->    
         <link rel="stylesheet" href="css/parsley.css" type="text/css"/>
@@ -25,10 +25,9 @@
     <body>
         <body id="page-top" class="landing-page" style="background:#f4f4f4;">
 
-            @include('partials._navbar')
-
-            @include('partials._login')
+            @include('partials._navbar')            
             
+            @include('partials._new_user')
         </body>
     </body>
 </html>

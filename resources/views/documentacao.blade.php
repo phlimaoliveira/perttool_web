@@ -23,9 +23,11 @@
     </head>
 
     <body>
-        <body id="page-top" class="landing-page">
+        <body id="page-top" class="landing-page" style="background:#f4f4f4;">
 
-            @include('partials._navbar_main')
+            @include('partials._navbar')
+
+            @include('partials._documentation_full')
             
             
         </body>
