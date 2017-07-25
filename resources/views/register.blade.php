@@ -7,6 +7,7 @@
 
         <title>PERTTOOL - Cadastro de usuários</title>
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Parsley -->    
         <link rel="stylesheet" href="css/parsley.css" type="text/css"/>
 
@@ -30,4 +31,13 @@
             @include('partials._new_user')
         </body>
     </body>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
 </html>
+
