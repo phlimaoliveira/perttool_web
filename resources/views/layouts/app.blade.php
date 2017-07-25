@@ -11,8 +11,8 @@
     <title>Repositório PERTTOOL</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/app.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body style="background:#f4f4f4">
     <div id="app">
