@@ -11,7 +11,7 @@
     <title>Repositório PERTTOOL</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
     <!-- Parsley -->    
     <link rel="stylesheet" href="css/parsley.css" type="text/css"/>
 
