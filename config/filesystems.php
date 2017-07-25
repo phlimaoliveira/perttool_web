@@ -57,10 +57,10 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => env('S3_KEY'),
-            'secret' => env('S3_SECRET'),
-            'region' => env('S3_REGION'),
-            'bucket' => env('S3_BUCKET'),
+            'key' => 'AKIAJ4F3VXRGRUOT7LLQ',
+            'secret' => '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',
+            'region' => 'us-west-1',
+            'bucket' => 'perttool',
         ],
 
     ],
