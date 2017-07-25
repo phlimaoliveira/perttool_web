@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-})->name('home');
+});
 
 Route::get('/index', function () {
     return view('index');
@@ -35,14 +35,19 @@ Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 Auth::routes();
 
-Route::get('/home', 'RedesPert@index')->name('home');
+Route::get('/home', 'RedesPert@index')->name('home')->middleware('auth');
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+Route::get('/profile', 'ProfileController@index')->middleware('auth');
 
 Route::get('/redes', function () {
     return view('visualizar_redes');
 });
 
-Route::post('/storeRedePert', 'RedesPert@store');
+Route::post('/storeRedePert', 'RedesPert@store')->middleware('auth');
+Route::post('/storeProfile', 'ProfileController@store')->middleware('auth');
+Route::post('/redes/storeComentario', 'ComentariosController@store')->middleware('auth');
+
+Route::get('/redes/{id}', 'RedesPert@visualizarRede');
+Route::get('/redes2/{id}', 'RedesPert@visualizarRede2');
+Route::get('/download/{id}', 'RedesPert@downloadRede');
+Route::get('/redes_pert', 'RedesPert@index2');

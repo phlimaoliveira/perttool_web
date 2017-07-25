@@ -85,7 +85,7 @@
                         <a class="btn btn-sm btn-white btn-block" href="register">Criar conta</a>
 
                         <div class="text-center" style="margin-top:10px;">
-                            <a href="#">
+                            <a href="/redes_pert">
                                 <small>Quero apenas visualizar as redes cadastradas!</small>
                             </a>
                         </div>

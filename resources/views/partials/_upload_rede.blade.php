@@ -1,16 +1,26 @@
 <div class="ibox-content">
 
-<form action="storeRedePert" method="POST">
+<form action="storeRedePert" enctype="multipart/form-data" method="POST">
     <div class="col-md-12" style="margin-bottom:20px;">                
         <div class="col-md-6">
-            <div class="fileinput fileinput-new" data-provides="fileinput">                
-                <span class="btn btn-block btn-success btn-file"><span class="fileinput-new"><i class="fa fa-file"></i> Selecionar Arquivo</span>                
-            </div> 
+            <div style="position:relative;">
+                    <a class='btn btn-block btn-success' href='javascript:;'>
+                        <i class="fa fa-file"></i> Selecionar Arquivo
+                        <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="add_arquivo" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                    </a>
+                    &nbsp;
+                    <span class='label label-info' id="upload-file-info"></span>
+            </div>            
         </div>
 
         <div class="col-md-6">
-            <div class="fileinput fileinput-new" data-provides="fileinput">
-                <span class="btn btn-block btn-success btn-file"><span class="fileinput-new"><i class="fa fa-file-image-o"></i> Selecionar Imagem</span>                
+            <div style="position:relative;">
+                    <a class='btn btn-block btn-success' href='javascript:;'>
+                        <i class="fa fa-file-image-o"></i> Selecionar Imagem
+                        <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="add_imagem" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                    </a>
+                    &nbsp;
+                    <span class='label label-info' id="upload-file-info"></span>
             </div> 
         </div>
     </div>
@@ -22,7 +32,7 @@
             </p>
         </div>
         <div class="col-md-10">
-            <input id="name" name="name" class="form-control required" aria-required="true" type="text">
+            <input id="name" name="name" placeholder="Identifique a sua rede" required="" class="form-control required" aria-required="true" type="text">
         </div>
     </div>
 
@@ -39,7 +49,7 @@
 
     <div class="col-md-12">
         <div class="fileinput fileinput-new pull-right" data-provides="fileinput" style="margin-right:15px;">
-            <input type="submit" name="submit" id="Submit">
+            <input class="btn btn-primary" type="submit" name="submit" id="Submit">
         </div> 
     </div>  
     <input type="hidden" name="_token" value="{{ csrf_token() }}">

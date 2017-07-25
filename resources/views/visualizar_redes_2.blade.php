@@ -21,20 +21,6 @@
                 <a href="/download/{{$rede->arquivo_rede}}"><span class="btn btn-success btn-file"><span class="fileinput-new"><i class="fa fa-cloud-download"></i> Download</span></a>
             </div>
 
-            <div class="col-lg-12 text-center">
-                @include('partials._message')  
-                <h2>Deixe seu <b>comentário</b></h2>
-                <form action="storeComentario" enctype="multipart/form-data" method="POST">
-                    <textarea class="form-control" id="comentario" required="" placeholder="Deixe sua opinião, sugestão ou agradeça o colaborador!" name="comentario" cols="50" rows="5"></textarea>
-
-                    <div class="fileinput fileinput-new pull-right" data-provides="fileinput" style="margin-top:15px;">
-                        <input class="btn btn-primary" type="submit" name="submit" id="Submit">
-                    </div> 
-                    <input type="hidden" name="id_rede" value="{{ $rede->id }}">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                </form>
-            </div>
-
             <!-- LISTA DE COMENTÁRIOS -->
 
             <div class="col-lg-12">
