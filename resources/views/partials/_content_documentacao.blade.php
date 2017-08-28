@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm-4">
             <h2><b>Redes de exemplo</b></h2>
-            <p style="color:#424242">Aprendendo a utilizar a PERTTOOL!</p>
+            <p style="color:#424242">Aprendendo a utilizar a PERTool!</p>
             <p><a class="navy-link" href="#" role="button">Quero aprender »</a></p>
         </div>
         <div class="col-sm-4">

@@ -6,7 +6,7 @@
         <div class="row">
 
             <div class="col-md-6">
-                <h2 class="font-bold">Repositório PERTTOOL</h2>
+                <h2 class="font-bold">Repositório PERTool</h2>
 
                 <br>
                 <p>
@@ -15,7 +15,7 @@
 
                 <br>
                 <p>
-                    Cadastre-se e compartilhe suas redes criadas na ferramenta PERTTOOL com os demais usuários. Acreditamos que a melhor forma de aprender é compartilhando o conhecimento.
+                    Cadastre-se e compartilhe suas redes criadas na ferramenta PERTool com os demais usuários. Acreditamos que a melhor forma de aprender é compartilhando o conhecimento.
                 </p>
 
                 <p>
@@ -100,6 +100,10 @@
             </div>
             <div class="col-md-6 text-right">
                <small>© 2015-2017</small>
+            </div>
+
+            <div class="text-center" style="margin-top:50px;">
+            <a href="/">Voltar ao inicio</a>
             </div>
         </div>
     </div>

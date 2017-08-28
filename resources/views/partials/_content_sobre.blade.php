@@ -8,7 +8,7 @@
         </div>
         <div class="row features-block">
             <div class="col-lg-6 features-text wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-                <h2><b>PERTTOOL</b>, facilitando o <b>ensino</b> de conceitos sobre <b>redes PERT/CPM</b></h2>
+                <h2><b>PERTool</b>, facilitando o <b>ensino</b> de conceitos sobre <b>redes PERT/CPM</b></h2>
                 <p style="color:#424242"><br>Sabemos que não é uma tarefa fácil explicar estes <b>conceitos</b>, o que acaba prejudicando a didática dos <b>professores</b> e o entendimento dos <b>alunos</b>. Pensando nisto, foi desenvolvida esta ferramenta para <b>auxiliar ambos</b> os lados, tanto no <b>ensino como na aprendizagem</b>. <br><br>Ajude-nos a <b>melhorar</b> este projeto. <br><br>Baixe agora pelo <b>Dropbox</b> ou <b>GitHub</b>.</p>
                 <ul class="list-inline social-icon" style="margin-top:25px;">
                     <li><a href="https://gitlab.com/joaodarcy/perttool" target="_blank"><i class="fa fa-github"></i></a>

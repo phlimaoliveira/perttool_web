@@ -13,8 +13,13 @@
                 {{ $rede->descricao }}
             </p>
 
-            <div class="col-lg-12">
-                <img src="https://s3-us-west-1.amazonaws.com/perttool/{{$rede->img_rede}}" width="900"/>
+            <div class="col-md-12" jstcache="0">
+                    <div class="ibox " jstcache="0">                        
+                        <div class="ibox-content" jstcache="0">
+                            <img src="https://s3-us-west-1.amazonaws.com/perttool/{{$rede->img_rede}}" class="img-responsive"/>            
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="margin-bottom:30px; margin-top:60px;">                

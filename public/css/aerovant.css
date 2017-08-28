@@ -310,3 +310,10 @@ body {
   color: #212121;
   font-weight: 600;
 }
+
+@media (max-width: 1200px;) {
+	#imagem-rede img {
+		width:400px;
+		height:400px;
+	}
+}

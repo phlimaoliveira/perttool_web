@@ -49,7 +49,7 @@
 
     <div class="col-md-12">
         <div class="fileinput fileinput-new pull-right" data-provides="fileinput" style="margin-right:15px;">
-            <input class="btn btn-primary" type="submit" name="submit" id="Submit">
+            <input class="btn btn-primary" type="submit" value="Upload da Rede" id="Submit">
         </div> 
     </div>  
     <input type="hidden" name="_token" value="{{ csrf_token() }}">

@@ -2,7 +2,7 @@
 <div class="container" style="margin-top: 100px;">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>Motivos<br> <span class="navy"> para você <b>amar</b> a PERTTOOL</span> </h1>
+            <h1>Motivos<br> <span class="navy"> para você <b>amar</b> a PERTool</span> </h1>
         </div>
     </div>
     <div class="row">
@@ -32,7 +32,12 @@
                 <h2><b>Multiplataforma</b></h2>
                 <p style="color:#424242">Faça download grátis para Windows, Linux e Mac</p>
             </div>
-        </div>
+        </div>        
+    </div>
+    <div class="text-center" style="margin-top:20px;">
+        <a target="_blank" href="http://ebooks.pucrs.br/edipucrs/anais/csbc/assets/2016/wei/33.pdf">
+            <img src="img/prize.png" width="30" height="30"> PERTool - BEST PAPER CSBC WEI 2016
+        </a>
     </div>
 </div>
 </section>

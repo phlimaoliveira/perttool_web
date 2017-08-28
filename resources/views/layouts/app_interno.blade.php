@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Repositório PERTTOOL</title>
+    <title>Repositório PERTool</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -56,7 +56,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li style="margin-top:20px;">Bem-vindo ao repositório PERTTOOL</li>
+                            <li style="margin-top:20px;">Bem-vindo ao repositório PERTool</li>
                         @else
                             <li style="margin-top:5px;" class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
