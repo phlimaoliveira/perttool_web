@@ -22,13 +22,16 @@ class RedesPert extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $rede = RedesPertModel::paginate(10);
+        $s = $request->input('s');
+
+
+        $rede = RedesPertModel::search($s)->paginate(10);
         $users = Profile::all();
         $comentarios = Comentarios::all();
 
-        return view('home')->with('rede', $rede)->with('users', $users)->with('comentarios', $comentarios);
+        return view('home')->with('rede', $rede)->with('users', $users)->with('comentarios', $comentarios)->with('s', $s);
     }
 
     // Sem login
@@ -202,4 +205,5 @@ class RedesPert extends Controller
     {
         //
     }
+
 }

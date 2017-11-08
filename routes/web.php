@@ -23,6 +23,18 @@ Route::get('/documentation', function () {
     return view('documentacao');
 });
 
+Route::get('/redes_exemplo', function () {
+    return view('redes_exemplo');
+});
+
+Route::get('/graficos_gantt', function () {
+    return view('graficos_gantt');
+});
+
+Route::get('/compartilhando', function () {
+    return view('compartilhando');
+});
+
 Route::get('/login', 'SessionsController@create');
 
 // Login and Logou Routes
@@ -36,6 +48,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Auth::routes();
 
 Route::get('/home', 'RedesPert@index')->name('home')->middleware('auth');
+Route::get('/search', 'RedesPert@index');
 
 Route::get('/profile', 'ProfileController@index')->middleware('auth');
 

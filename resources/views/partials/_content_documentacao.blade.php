@@ -4,17 +4,17 @@
         <div class="col-sm-4">
             <h2><b>Redes de exemplo</b></h2>
             <p style="color:#424242">Aprendendo a utilizar a PERTool!</p>
-            <p><a class="navy-link" href="#" role="button">Quero aprender »</a></p>
+            <p><a class="navy-link" href="/redes_exemplo" role="button">Quero aprender »</a></p>
         </div>
         <div class="col-sm-4">
             <h2><b>Gráficos de Gantt?</b></h2>
             <p style="color:#424242">O que são e como exportá-los?</p>
-            <p><a class="navy-link" href="#" role="button">Quero aprender »</a></p>
+            <p><a class="navy-link" href="/graficos_gantt" role="button">Quero aprender »</a></p>
         </div>
         <div class="col-sm-4">
             <h2><b>Compartilhando redes!</b></h2>
             <p style="color:#424242">Como posso compartilhar a minha incrível rede?</p>
-            <p><a class="navy-link" href="#" role="button">Quero aprender »</a></p>
+            <p><a class="navy-link" href="/compartilhando" role="button">Quero aprender »</a></p>
         </div>
     </div>
 

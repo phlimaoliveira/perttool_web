@@ -5,6 +5,22 @@
 
     @include('partials._message')  
 
+    <div class="ibox-content" style="background:#f4f4f4">
+        <div class="panel-body" >
+        <div class="pull-right">
+            <form action="/search" method="get" class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="s" placeholder="Busca por palavra-chave" value="{{ isset($s) ? $s : '' }}">
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
     <div class="ibox-content">        
         <div class="panel-body">
                 <div class="panel-group" id="accordion">
@@ -81,7 +97,7 @@
 
             <!-- PAGINAÇÃO -->
             <div class="pull-right" style="margin-bottom:-40px;">
-                {{ $rede->links() }}
+                {{ $rede->appends(['s' => $s])->links() }}
             </div>
 
         </div>
