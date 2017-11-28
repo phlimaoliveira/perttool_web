@@ -6,7 +6,7 @@
         <div class="col-lg-12" style="background:white;">
             <div class="text-center">
                 <h1 style="margin-top:50px;"><b>{{ $rede->nome_rede }}</b></h1>
-                <h5><b>Criado por:</b> {{ $rede->nome_usuario }}</h5>  
+                <h5><b>Criado por:</b> <a href="/user/{{$rede->id_user}}">{{ $rede->nome_usuario }}</a></h5>  
             </div> 
 
             <p style="padding:30px;">
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="margin-bottom:30px; margin-top:60px;">                
+            <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="margin-bottom:30px; margin-top:60px; background: white; padding-bottom: 30px;">                
                 <a href="/download/{{$rede->arquivo_rede}}"><span class="btn btn-success btn-file"><span class="fileinput-new"><i class="fa fa-cloud-download"></i> Download</span></a>
             </div>
 

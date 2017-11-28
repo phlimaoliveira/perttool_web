@@ -49,6 +49,7 @@ Auth::routes();
 
 Route::get('/home', 'RedesPert@index')->name('home')->middleware('auth');
 Route::get('/search', 'RedesPert@index');
+Route::get('/user/{id}', 'UserController@show');
 
 Route::get('/profile', 'ProfileController@index')->middleware('auth');
 

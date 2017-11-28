@@ -6,18 +6,24 @@
     @include('partials._message')  
 
     <div class="ibox-content" style="background:#f4f4f4">
-        <div class="panel-body" >
-        <div class="pull-right">
-            <form action="/search" method="get" class="form-inline">
+        <div class="panel-body pull-right" >        
+            <div class="col-md-12">
+            <form action="/search" method="get">                
+                    
                 <div class="form-group">
-                    <input type="text" class="form-control" name="s" placeholder="Busca por palavra-chave" value="{{ isset($s) ? $s : '' }}">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="s" placeholder="Busca por palavra-chave" value="{{ isset($s) ? $s : '' }}">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary" type="submit">Buscar</button>
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Buscar</button>
+                
                 </div>
-            </form>
-        </div>
+            </form>        
+            </div>
         </div>
     </div>
 
@@ -51,11 +57,11 @@
                     @foreach($users as $u)
                         @if($u->id_user == $r->id_user)
                             @if($u->foto_perfil == 'foto_perfil' || $u->foto_perfil == '')
-                                <a href="profile.html" class="pull-left">
+                                <a href="/user/{{$u->id}}" class="pull-left">
                                     <img alt="image" class="img-circle" style="width:50px; height: 50px;" src="/img/profile_icon.png">
                                 </a>
                             @else
-                                <a href="profile.html" class="pull-left">
+                                <a href="/user/{{$u->id}}" class="pull-left">
                                     <img alt="image" class="img-circle" style="width:50px; height: 50px;" src="https://s3-us-west-1.amazonaws.com/perttool/{{$u->foto_perfil}}">
                                 </a>
                             @endif
@@ -66,7 +72,11 @@
                     <div class="media-body ">                    
                         <a href="/redes/{{ $r->id }}" style="font-size:14pt;">{{ $r->nome_rede }}</a><br>
                         <small class="pull-right">{{ Carbon\Carbon::parse($r->created_at)->format('d/m/Y') }}</small>
-                        Postado por: <strong>{{ $r->nome_usuario }}</strong><br>  
+                        @foreach($users as $u)
+                            @if($u->id_user == $r->id_user)
+                                Postado por: <strong><a href="/user/{{$u->id}}">{{ $r->nome_usuario }}</a></strong><br>  
+                            @endif
+                        @endforeach
 
                         <?php $qtdComentarios = 0 ?>
                         @foreach($comentarios as $c)                  
